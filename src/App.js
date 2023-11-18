@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import AppPhaser from "./components/AppPhaser";
+import AppReact from "./components/AppReact";
 
 
 
@@ -18,7 +19,7 @@ return(
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/ProyectoPhaser">Dude</Nav.Link>
-            <Nav.Link href="#link">Anotador</Nav.Link>
+            <Nav.Link href="/ProyectoNotas">Anotador</Nav.Link>
             <Nav.Link href="#home">Naves</Nav.Link>
             <Nav.Link href="#link">What Animal is?</Nav.Link>
             <Nav.Link href="#home">Comparador De Precios</Nav.Link>
@@ -31,6 +32,7 @@ return(
           <Route path="/" element = {< Inicio/>} />
          
           <Route path="ProyectoPhaser" element = {< AppPhaser/>} />
+          <Route path="ProyectoNotas" element = {< AppReact/>} />
           
         </Routes>
     </Router>
