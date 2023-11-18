@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import AppPhaser from "./components/AppPhaser";
 import AppReact from "./components/AppReact";
+import AppReactComp from "./components/AppReactComp";
 
 
 
@@ -22,7 +23,7 @@ return(
             <Nav.Link href="/ProyectoNotas">Anotador</Nav.Link>
             <Nav.Link href="#home">Naves</Nav.Link>
             <Nav.Link href="#link">What Animal is?</Nav.Link>
-            <Nav.Link href="#home">Comparador De Precios</Nav.Link>
+            <Nav.Link href="/ComparadorPrecios">Comparador De Precios</Nav.Link>
           
           </Nav>
         </Navbar.Collapse>
@@ -33,7 +34,7 @@ return(
          
           <Route path="ProyectoPhaser" element = {< AppPhaser/>} />
           <Route path="ProyectoNotas" element = {< AppReact/>} />
-          
+          <Route path="ComparadorPrecios" element = {< AppReactComp/>} />
         </Routes>
     </Router>
 
