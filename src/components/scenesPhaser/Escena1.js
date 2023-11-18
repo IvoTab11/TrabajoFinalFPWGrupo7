@@ -1,29 +1,33 @@
 import Phaser from "phaser";
 
-
-class Escena1 extends Phaser.Scene{
-    constructor(){
+// Definición deEscena1 
+class Escena1 extends Phaser.Scene {
+    constructor() {
+    // Llama al constructor de la clase padre Phaser.Scene y asigna el nombre 'Escena1' a esta escena
         super("Escena1");
+        
+    // Inicializa la propiedad 'platforms' como null
         this.platforms = null;
     }
 
-    preload(){
-        this.load.image('inicio', '/img/start-01.jpg', {frameWidth: 200, frameHeight: 200})
-
+    // Método preload(): Carga los recursos necesarios antes de que la escena sea creada
+    preload() {
+        // Carga una imagen llamada 'inicio' desde la ruta '/img/start-01.jpg'
+        this.load.image('inicio', '/img/start-01.jpg');
     }
 
-    create(){
+    // Método create(): Se ejecuta una vez que los recursos han sido cargados, crea elementos en la escena
+    create() {
+        // Añade la imagen en las coordenadas indicadad
         this.add.image(400, 300, 'inicio');
+
+        // Configura un evento de teclado para detectar la pulsación de la tecla SPACE
         this.input.keyboard.on('keydown-SPACE', function () {
-            // Cambiar a la Escena2
+            // Cambiar a la Escena2 cuando se presiona la tecla SPACE
             this.scene.start('Escena2');
         }, this);
     }
-
-    // update(){
-    //     if(Phaser.Input.Keyboard.JustDown(this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE))){
-    //         this.scene.start('Escena2');
-    //     }
-    // }
 }
+
+// Exporta la clase Escena1 para que pueda ser utilizada en otros archivos
 export default Escena1;

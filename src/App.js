@@ -31,6 +31,7 @@ return(
           <Route path="/" element = {< Inicio/>} />
          
           <Route path="ProyectoPhaser" element = {< AppPhaser/>} />
+          
         </Routes>
     </Router>
 
