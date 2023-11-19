@@ -24,7 +24,7 @@ return(
     {/* <CardGroup> */}
     <Row>
     {proyectos.map((proyecto,index)=>(
-      <Card style={{ width: '30rem' }}>
+      <Card key={proyecto.id} style={{ width: '30rem' }}>
       <Card.Img variant="top" src={proyecto.img} width={'1000px'} height={'500px'}/>
       <Card.Body>
         <Card.Title>{proyecto.titulo}</Card.Title>
