@@ -1,0 +1,38 @@
+[
+    {
+        "img": "/img/GameAnimals/lion.jpg",
+        "apellido": "Balcarce",
+        "nombre": "Rafael",
+        "lu": "00001",
+        "dni": "",
+        "pasatiempo": "jugar",
+        "gitHub": ""
+    },
+    {
+        "img": "/img/Integrantes/Araceli.jpeg",
+        "apellido": "Sosa",
+        "nombre": "Araceli",
+        "lu": "TUV000659",
+        "dni": "45109362",
+        "pasatiempo": "Escuchar música, ver series.",
+        "gitHub": "https://github.com/celidearaceli"
+    },
+    {
+        "img": "/img/Integrantes/Ivo.jpeg",
+        "apellido": "Tabarcache",
+        "nombre": "Ivo",
+        "lu": "TUV000673",
+        "dni": "45109415",
+        "pasatiempo": "Jugar ajedrez, videojuegos, leer, tocar instrumentos.",
+        "gitHub": "https://github.com/IvoTab11"
+    },
+    {
+        "img": "/img/Integrantes/Leandro.jpeg",
+        "apellido": "Valdez Cruz",
+        "nombre": "Leandro",
+        "lu": "TUV000674",
+        "dni": "45881200",
+        "pasatiempo": "Entrenar, estuiar, jugar y programar.",
+        "gitHub": "https://github.com/ValdezCruzLean"
+    }
+]
