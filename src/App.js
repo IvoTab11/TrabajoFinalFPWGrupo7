@@ -9,13 +9,12 @@ import AppReactComp from "./components/AppReactComp";
 import AppReactAnimals from "./components/AppReactAnimals";
 
 
-
 function App(){
 
 return(
     <Router>
         <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+        <Container>
         <Navbar.Brand href="/">Grupo 777</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -32,10 +31,11 @@ return(
     </Navbar>
         <Routes>
           <Route path="/" element = {< Inicio/>} />
-          <Route path="WhatAnimalIs?" element = {< AppReactAnimals/>} />
+         
           <Route path="ProyectoPhaser" element = {< AppPhaser/>} />
           <Route path="ProyectoNotas" element = {< AppReact/>} />
           <Route path="ComparadorPrecios" element = {< AppReactComp/>} />
+          <Route path="WhatAnimalIs" element = {< AppReactAnimals/>} />
         </Routes>
     </Router>
 

@@ -1,24 +1,29 @@
-
+// Importar las dependencias necesarias de React y React Bootstrap
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, FloatingLabel, Button } from 'react-bootstrap';
 
-
+// Definir el componente de formulario de productos que recibe la función `guardarProducto` como prop
 const ProductForm = ({ guardarProducto }) => {
+  // Función que convierte a mayúsculas el texto del input del nombre del producto
   const [nombre, setNombre] = useState('');
   const [precio, setPrecio] = useState('');
   const [comercio, setComercio] = useState('');
 
+  // Función que convierte a mayúsculas el texto del input del nombre del producto
   const mayus = (e) => {
     setNombre(e.target.value.toUpperCase());
   };
 
+  // Función que se ejecuta al hacer clic en el botón de guardar
   const handleClickGuardar = () => {
+    // Crear un nuevo objeto de producto con la información ingresada
     const nuevoProducto = {
       producto: nombre,
       precio: Number(precio),
       comercio,
     };
 
+    // Llamar a la función guardarProducto pasando el nuevo producto como argumento
     guardarProducto(nuevoProducto);
     //console.log(nuevoProducto);
     
@@ -29,8 +34,9 @@ const ProductForm = ({ guardarProducto }) => {
     setComercio('');
   };
 
+  // Renderizar el formulario con etiquetas y componentes de React Bootstrap
   return (
-<Container className="text-center">
+   <Container className="text-center">
       <h1 className="display-4 text-center mb-4">Comparador de Precios</h1>
 
       <Row className="g-2">
@@ -48,6 +54,7 @@ const ProductForm = ({ guardarProducto }) => {
 
       <FloatingLabel controlId="floatingSelectGrid" label="Comercio">
         <Form.Select id="floatingSelectGrid" value={comercio} onChange={(e) => setComercio(e.target.value)}>
+          <option selected>Abrir menú</option>
           <option value="Vea">Vea</option>
           <option value="Comodín">Comodín</option>
           <option value="Carrefour">Carrefour</option>
@@ -66,4 +73,6 @@ const ProductForm = ({ guardarProducto }) => {
   );
 };
 
+
+// Exportar el componente para su uso en otras partes de la aplicación
 export default ProductForm;             
