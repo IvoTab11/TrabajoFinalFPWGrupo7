@@ -7,6 +7,7 @@ import AppPhaser from "./components/AppPhaser";
 import AppReact from "./components/AppReact";
 import AppReactComp from "./components/AppReactComp";
 import AppReactAnimals from "./components/AppReactAnimals";
+import ErrorPage from "./components/ErrorPage";
 
 
 
@@ -36,6 +37,8 @@ return(
           <Route path="ProyectoPhaser" element = {< AppPhaser/>} />
           <Route path="ProyectoNotas" element = {< AppReact/>} />
           <Route path="ComparadorPrecios" element = {< AppReactComp/>} />
+          <Route path="*" element = {< ErrorPage/>} />
+
         </Routes>
     </Router>
 
