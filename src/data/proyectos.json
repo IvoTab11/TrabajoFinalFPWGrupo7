@@ -1,0 +1,26 @@
+[
+    {
+        "img":"/img/Proyectos/imagenDude.png",
+        "titulo":"Juego Dude",
+        "descripcion":"Proyecto del videojuego 'Dude'. Recoge todas las estrellas para pasar de nivel y evita las bombas.",
+        "link": "/ProyectoPhaser"
+    },
+    {
+        "img":"/img/Proyectos/imagenAnotador.png",
+        "titulo":"Proyecto Lista de Tareas",
+        "descripcion":"Anota tus tareas y ordenalas según necesites en 'En Proceso' y 'Resueltas'.",
+        "link": "/ProyectoNotas"
+    },
+    {
+        "img":"/img/Proyectos/imagenComparador.png",
+        "titulo":"Proyecto Comparador de Precios",
+        "descripcion":"Compara los precios de los productos que necesites comprar en los supermercados más conocidos.",
+        "link": "/ComparadorPrecios"
+    },
+    {
+        "img":"/img/Proyectos/imagenAnimales.png",
+        "titulo":"Juego de Niños",
+        "descripcion":"Adivina la mayor cantidad de animales y juga con un amigo.",
+        "link": "/ProyectoPhaser"
+    }
+]
