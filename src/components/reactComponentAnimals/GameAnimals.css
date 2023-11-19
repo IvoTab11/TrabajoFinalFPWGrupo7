@@ -1,0 +1,26 @@
+/* GameAnimals.css */
+.game-container {
+    text-align: center;
+    background-color: #87CEEB; /* Celeste */
+    padding: 60px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.message {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.wildcard-button {
+    margin-top: 10px;
+}
