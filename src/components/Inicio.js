@@ -11,11 +11,8 @@ import AppPhaser from "./AppPhaser";
 import AppReact from "./AppReact";
 import AppReactComp from "./AppReactComp";
 
-import imagenDude from "../img/imagenDude.png";
-import imagenAnotador from "../img/imagenAnotador.png";
-import imagenComparador from "../img/imagenComparador.png";
-
 import integrantes from "../data/integrantes.json";
+import proyectos from "../data/proyectos.json";
 function Inicio(){
 return(
 
@@ -24,96 +21,30 @@ return(
         <p> Hola este es el inicio de Nuestra pagina</p>
     
     {/* <Router> */}
-    <CardGroup>
-      <Card>
-        <Card.Img variant="top" src={imagenDude} height={'500px'} />
-        <Card.Body>
-          <Card.Title>Juego Dude</Card.Title>
-          <Card.Text>
-            Proyecto del videojuego "Dude". Recoge todas las estrellas para 
-            pasar de nivel y evita las bombas.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-            <Link to="/ProyectoPhaser">
-                <Button variant="primary">Ir</Button>
-            </Link>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={imagenAnotador} height={'500px'}/>
-        <Card.Body>
-          <Card.Title>Proyecto Lista de Tareas</Card.Title>
-          <Card.Text>
-            Anota tus tareas y ordenalas según necesites en "En Proceso" y "Resueltas".
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-            <Link to="/ProyectoNotas">
-                <Button variant="primary">Ir</Button>
-            </Link>
-            
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={imagenComparador} height={'500px'}/>
-        <Card.Body>
-          <Card.Title>Proyecto Comparador de Precios</Card.Title>
-          <Card.Text>
-            Compara los precios de los productos que necesites comprar en los
-            supermercados más conocidos.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-            <Link to="/ComparadorPrecios">
-            <   Button variant="primary">Ir</Button>
-            </Link>
-            
-        </Card.Footer>
-      </Card>
-      
-    </CardGroup>
-    <CardGroup>
-    <Card>
-        <Card.Img variant="top" src={imagenDude} height={'500px'} />
-        <Card.Body>
-          <Card.Title>Juego de Niños</Card.Title>
-          <Card.Text>
-            Adivina la mayor cantidad de animales y juga con un amigo.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-            <Link to="/ProyectoPhaser">
-                <Button variant="primary">Ir</Button>
-            </Link>
-        </Card.Footer>
-       </Card>
-       <Card>
-        <Card.Img variant="top" src={imagenDude} height={'500px'} />
-        <Card.Body>
-          <Card.Title>Juego de Naves</Card.Title>
-          <Card.Text>
-            Enfrentate a naves enemigas y desafía al jefe final.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-            <Link to="/ProyectoPhaser">
-                <Button variant="primary">Ir</Button>
-            </Link>
-        </Card.Footer>
-       </Card>
-       
-      </CardGroup>
+    {/* <CardGroup> */}
+    <Row>
+    {proyectos.map((proyecto,index)=>(
+      <Card style={{ width: '30rem' }}>
+      <Card.Img variant="top" src={proyecto.img} width={'1000px'} height={'500px'}/>
+      <Card.Body>
+        <Card.Title>{proyecto.titulo}</Card.Title>
+        <Card.Text>
+          {proyecto.descripcion}
+        </Card.Text>
+        <Link to={proyecto.link}>
+            <Button variant="primary">Ir</Button>
+        </Link>
+      </Card.Body>
+    </Card>
+    ))}
+    </Row>
+    
         <Routes>
-          {/* <Route path="/" element = {< Inicio/>} /> */}
-         
           <Route path="ProyectoPhaser" element = {< AppPhaser/>} />
           <Route path="ProyectoNotas" element = {< AppReact/>} />
           <Route path="ComparadorPrecios" element = {< AppReactComp/>} />
         </Routes>
-    {/* </Router> */}
-       
-
+      
        <footer style={{backgroundColor: '#73C6B6'}}>
         <h2>About Us</h2>
         <Row>
