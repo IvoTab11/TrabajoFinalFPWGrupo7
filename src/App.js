@@ -8,6 +8,7 @@ import AppReact from "./components/AppReact";
 import AppReactComp from "./components/AppReactComp";
 import AppReactAnimals from "./components/AppReactAnimals";
 import ErrorPage from "./components/ErrorPage";
+import AppPhaser2 from "./components/AppPhaser2";
 
 
 
@@ -23,7 +24,7 @@ function App() {
             <Nav>
               <Nav.Link href="/ProyectoPhaser">Dude</Nav.Link>
               <Nav.Link href="/ProyectoNotas">Anotador</Nav.Link>
-              <Nav.Link href="#home">Naves</Nav.Link>
+              <Nav.Link href="/JuegoNaves">Naves</Nav.Link>
               <Nav.Link href="/WhatAnimalIs">What Animal is?</Nav.Link>
               <Nav.Link href="/ComparadorPrecios">Comparador De Precios</Nav.Link>
             </Nav>
@@ -36,6 +37,8 @@ function App() {
         <Route path="ProyectoPhaser" element={< AppPhaser />} />
         <Route path="ProyectoNotas" element={< AppReact />} />
         <Route path="ComparadorPrecios" element={< AppReactComp />} />
+        <Route path="JuegoNaves" element={< AppPhaser2 />} />
+
         <Route path="*" element={< ErrorPage />} />
 
 
