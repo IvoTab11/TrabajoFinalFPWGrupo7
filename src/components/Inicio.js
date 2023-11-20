@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import Button from 'react-bootstrap/Button';
 //import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
@@ -21,8 +20,6 @@ function Inicio() {
         <h2 className="display-4 text-center mb-4"> TRABAJO FINAL  </h2>
         <p> PROYECTOS</p>
       </center>
-      {/* <Router> */}
-      {/* <CardGroup> */}
       <Row className="justify-content-center">
         {proyectos.map((proyecto, index) => (
           <Card key={proyecto.id} style={{ width: '30rem' }} className="text-center">

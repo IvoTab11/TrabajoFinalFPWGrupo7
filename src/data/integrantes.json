@@ -1,12 +1,12 @@
 [
     {
-        "img": "/img/GameAnimals/lion.jpg",
+        "img": "/img/Integrantes/Rafael.png",
         "apellido": "Balcarce",
         "nombre": "Rafael",
-        "lu": "00001",
-        "dni": "",
+        "lu": "TUV000570",
+        "dni": "46255173",
         "pasatiempo": "jugar",
-        "gitHub": ""
+        "gitHub": "https://github.com/TaiRFest156"
     },
     {
         "img": "/img/Integrantes/Araceli.jpeg",
@@ -32,7 +32,7 @@
         "nombre": "Leandro",
         "lu": "TUV000674",
         "dni": "45881200",
-        "pasatiempo": "Entrenar, estuiar, jugar y programar.",
+        "pasatiempo": "Entrenar, estudiar, jugar y programar.",
         "gitHub": "https://github.com/ValdezCruzLean"
     }
 ]

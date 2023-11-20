@@ -22,7 +22,7 @@ function App() {
           <Navbar.Collapse className="justify-content-end">
             <Nav>
               <Nav.Link href="/ProyectoPhaser">Dude</Nav.Link>
-              <Nav.Link href="/ProyectoNotas">Anotador</Nav.Link>
+              <Nav.Link href="/ProyectoNotas">Lista de Tareas</Nav.Link>
               <Nav.Link href="#home">Naves</Nav.Link>
               <Nav.Link href="/WhatAnimalIs">What Animal is?</Nav.Link>
               <Nav.Link href="/ComparadorPrecios">Comparador De Precios</Nav.Link>
