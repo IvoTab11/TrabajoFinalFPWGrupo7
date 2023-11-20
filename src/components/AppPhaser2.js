@@ -1,10 +1,10 @@
 import Phaser from 'phaser';
 import React, { useEffect, useRef } from 'react';
-import EscenaNave1 from './sceneshaser2/EscenaNave1';
-import EscenaNave2 from './sceneshaser2/EscenaNave2';
-import EscenaNave3 from './sceneshaser2/EscenaNave3';
-import EscenaNave4 from './sceneshaser2/EscenaNave4';
-import EscenaNave5 from './sceneshaser2/EscenaNave5';
+import EscenaNave1 from './scenesPhaser2/EscenaNave1';
+import EscenaNave2 from './scenesPhaser2/EscenaNave2';
+import EscenaNave3 from './scenesPhaser2/EscenaNave3';
+import EscenaNave4 from './scenesPhaser2/EscenaNave4';
+import EscenaNave5 from './scenesPhaser2/EscenaNave5';
 
 
 const AppPhaser2 = () => {
