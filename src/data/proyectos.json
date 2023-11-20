@@ -26,5 +26,12 @@
         "titulo":"Juego de Niños",
         "descripcion":"Adivina la mayor cantidad de animales y juga con un amigo.",
         "link": "/WhatAnimalIs"
+    },
+    {
+        "id":5,
+        "img":"/img/Proyectos/imgNave.png",
+        "titulo":"Juego de Naves",
+        "descripcion":"Enfrentate a las naves enemigas y desafía al jefe final.",
+        "link": "/JuegoNaves"
     }
 ]
